@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đặt phòng</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    min-height:100vh;
+    background:radial-gradient(circle at top,#1e293b,#0f172a,#020617);
+    color:white;
+}
+
+/* HEADER */
+header{
+    background:rgba(255,255,255,0.05);
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    padding:10px 14px;
+    border-radius:10px;
+}
+
+nav a:hover{
+    background:#2563eb;
+}
+
+/* TITLE */
+.title{
+    text-align:center;
+    font-size:42px;
+    margin:40px 0;
+}
+
+/* FORM */
+form{
+    width:90%;
+    max-width:500px;
+    margin:auto;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    padding:40px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin:10px 0 18px;
+    border:none;
+    border-radius:10px;
+}
+
+input:focus{
+    outline:none;
+    box-shadow:0 0 15px rgba(37,99,235,0.6);
+    transform:scale(1.02);
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:linear-gradient(135deg,#3b82f6,#1d4ed8);
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div><b>Khách Sạn Tình Yêu Lê Phúc Thịnh</b></div>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="booking.html">Đặt phòng</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
+</header>
+
+<h2 class="title">Đặt Phòng</h2>
+
+<form>
+    <input type="text" placeholder="Họ tên">
+    <input type="email" placeholder="Email">
+    <input type="date">
+    <input type="date">
+    <button>Xác nhận đặt phòng</button>
+</form>
+
+</body>
+</html>
